@@ -1,0 +1,266 @@
+/* Order Tracking Page */
+.order-tracking-page {
+    padding: 2rem 0;
+}
+
+.order-tracking-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.order-tracking-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Order Status Timeline */
+.order-status {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.status-timeline::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e9ecef;
+    z-index: 1;
+}
+
+.status-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    z-index: 2;
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: #adb5bd;
+    transition: all 0.3s ease;
+}
+
+.step-icon i {
+    font-size: 1.25rem;
+}
+
+.step-label {
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.step-date {
+    font-size: 0.875rem;
+    color: #adb5bd;
+}
+
+/* Active Step */
+.status-step.active .step-icon {
+    border-color: #4CAF50;
+    background: #4CAF50;
+    color: #fff;
+}
+
+.status-step.active .step-label {
+    color: #4CAF50;
+}
+
+.status-step.active .step-date {
+    color: #6c757d;
+}
+
+/* Order Details */
+.order-details {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.order-info,
+.shipping-info,
+.order-items {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-details h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item .label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.info-item .value {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Order Items */
+.items-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.order-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.item-image {
+    width: 80px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Pepe Animation */
+.pepe-delivery {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pepe-delivery-animation {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .status-timeline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .status-timeline::before {
+        top: 0;
+        left: 25px;
+        width: 2px;
+        height: 100%;
+    }
+
+    .status-step {
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .step-icon {
+        margin-bottom: 0;
+    }
+
+    .step-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item {
+        flex-direction: column;
+    }
+
+    .item-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .item-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-tracking-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .order-details h2 {
+        font-size: 1.25rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-info,
+    .shipping-info,
+    .order-items {
+        padding: 1rem;
+    }
+} 

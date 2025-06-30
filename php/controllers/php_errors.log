@@ -1,0 +1,88 @@
+[05-Jan-2025 06:39:25 Europe/Berlin] Cart Query: SELECT c.comic_id, c.title, c.price, c.stock, c.image_name as image, c.author,
+                         cart.quantity, (c.price * cart.quantity) as total_price 
+                  FROM cart 
+                  JOIN comics c ON cart.comic_id = c.comic_id 
+                  WHERE cart.user_id = :user_id
+[05-Jan-2025 06:39:25 Europe/Berlin] User ID: 3
+[05-Jan-2025 06:39:25 Europe/Berlin] Cart Results: Array
+(
+    [0] => Array
+        (
+            [comic_id] => 3
+            [title] => Space Warriors
+            [price] => 24.99
+            [stock] => 25
+            [image] => space-warriors.jpg
+            [author] => Mike Scribe
+            [quantity] => 1
+            [total_price] => 24.99
+        )
+
+)
+
+[05-Jan-2025 06:39:32 Europe/Berlin] Cart Query: SELECT c.comic_id, c.title, c.price, c.stock, c.image_name as image, c.author,
+                         cart.quantity, (c.price * cart.quantity) as total_price 
+                  FROM cart 
+                  JOIN comics c ON cart.comic_id = c.comic_id 
+                  WHERE cart.user_id = :user_id
+[05-Jan-2025 06:39:32 Europe/Berlin] User ID: 3
+[05-Jan-2025 06:39:32 Europe/Berlin] Cart Results: Array
+(
+    [0] => Array
+        (
+            [comic_id] => 3
+            [title] => Space Warriors
+            [price] => 24.99
+            [stock] => 25
+            [image] => space-warriors.jpg
+            [author] => Mike Scribe
+            [quantity] => 1
+            [total_price] => 24.99
+        )
+
+)
+
+[05-Jan-2025 06:39:56 Europe/Berlin] Cart Query: SELECT c.comic_id, c.title, c.price, c.stock, c.image_name as image, c.author,
+                         cart.quantity, (c.price * cart.quantity) as total_price 
+                  FROM cart 
+                  JOIN comics c ON cart.comic_id = c.comic_id 
+                  WHERE cart.user_id = :user_id
+[05-Jan-2025 06:39:56 Europe/Berlin] User ID: 3
+[05-Jan-2025 06:39:56 Europe/Berlin] Cart Results: Array
+(
+    [0] => Array
+        (
+            [comic_id] => 3
+            [title] => Space Warriors
+            [price] => 24.99
+            [stock] => 25
+            [image] => space-warriors.jpg
+            [author] => Mike Scribe
+            [quantity] => 1
+            [total_price] => 24.99
+        )
+
+)
+
+[05-Jan-2025 06:40:12 Europe/Berlin] Cart Query: SELECT c.comic_id, c.title, c.price, c.stock, c.image_name as image, c.author,
+                         cart.quantity, (c.price * cart.quantity) as total_price 
+                  FROM cart 
+                  JOIN comics c ON cart.comic_id = c.comic_id 
+                  WHERE cart.user_id = :user_id
+[05-Jan-2025 06:40:12 Europe/Berlin] User ID: 3
+[05-Jan-2025 06:40:12 Europe/Berlin] Cart Results: Array
+(
+    [0] => Array
+        (
+            [comic_id] => 3
+            [title] => Space Warriors
+            [price] => 24.99
+            [stock] => 25
+            [image] => space-warriors.jpg
+            [author] => Mike Scribe
+            [quantity] => 1
+            [total_price] => 24.99
+        )
+
+)
+
