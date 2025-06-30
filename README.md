@@ -131,9 +131,6 @@ pepecomics/
 3. Test all features and functionality
 4. Report any issues through the issue tracker
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
